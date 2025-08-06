@@ -1,0 +1,163 @@
+/* CSS Template */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing: content-box; (default) */
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Element selector */
+/* h1{
+    background-color: black;
+    color: white;
+} */
+
+/* Class Selector */
+/* .heading{
+    background-color: blue;
+} */
+
+/* Id Selector */
+/* #unique{
+    background-color: red;
+} */
+
+/* Grouping */
+/* .heading, #unique{
+    font-size: 40px;
+} */
+
+/* Universal Selector */
+/* *{
+   background-color: gray; 
+} */
+
+
+/* Colors and Units */
+#unique{
+    /* color: magenta; */
+    /* color: #B9375D; */
+    /* color: rgb(255, 0, 0); */
+    /* color: rgba(255, 0, 0, 0.3);  */
+    /* A -> Alpha channel*/
+}
+
+/* Units : Absolute(px, cm, mm), Relative (em, rem, vh,vw, %) */
+
+/* #unique{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+} */
+/* #parent{
+    height: 400px;
+    width: 200px;
+    background-color: beige;
+}
+#child{
+    height: 50%;
+    width: 50%;
+    background-color: gray;
+} */
+
+/* #parent{
+    font-size: 20px;
+}
+#child{
+    font-size: 2rem
+} */
+
+/* CSS Box Model */
+/* -> Margin, border, padding, content */
+
+/* Content */
+#unique{
+    /* height: 200px;
+    width: 200px; */
+    background-color: black;
+}
+/* Border */
+#unique{
+    /* border-width: 3px;
+    border-color: red;
+    border-style: solid; */
+    /* border: red solid 5px; */
+    /* border-bottom: red 2px solid; */
+}
+/* Padding - Space between the border and the content */
+#unique{
+    /* padding: 10px; */
+    /* padding-top: 50px */
+    /* padding: top right bottom left */
+    /* padding: 50px 25px 100px 1px */
+    /* padding : x y (x-> top/bottom, y-> left/right) */
+    /* padding: 50px 75px; */
+}
+/* Margin */
+#unique{
+    /* margin: 20px; */
+    /* margin: 0 auto */
+}
+/* Box-Sizing */
+#unique{
+    /* height: 400px;
+    width: 400px;
+    border: 10px solid red;
+    padding: 100px; */
+    /* Total width : 620px - content-box(actual width + border + padding) */
+}
+#unique{
+    /* height: 400px;
+    width: 400px;
+    border: 10px solid red;
+    padding: 100px; */
+    /* Total width : 400px - border-box(total width -> width) */
+}
+
+/* Typography */
+#typo{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    /* letter-spacing: 5px; */
+    /* line-height: 100px; */
+    /* text-align: left, right, center, start, end; */
+    /* text-decoration: underline, overline, line-through, none; */
+    /* text-transform: capitalize, lowercase, uppercase; */
+}
+a{
+    text-decoration: none;
+}
+
+/* backgrounds */
+#bgc{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    /* background-color: rgba(255, 0, 0, 0.1); */
+}
+#backimg{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    /* background-image: url("https://images.unsplash.com/photo-1583912267382-49a82d19bd94?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    /* background-size: auto, contain, cover; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: top; */
+
+    /* background: linear-gradient(direction, color1, color2, ....colorN); */
+    /* Top to bottom */
+    /* background: linear-gradient(red, yellow); */
+    /* Left to Right */
+    /* background: linear-gradient(to right, red, yellow, white); */
+    /* Diagonal */
+    /* background: linear-gradient(to bottom right, red, yellow); */
+    /* Degrees */
+    /* background: linear-gradient(45deg, red, yellow); */
+
+}
