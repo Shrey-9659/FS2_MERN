@@ -161,3 +161,61 @@ a{
     /* background: linear-gradient(45deg, red, yellow); */
 
 }
+
+/* Displays and Positioning */
+.parent{
+    margin: 1rem;
+    border: 1px solid black;
+    height: 80vh;
+    width: 80vw;
+    background-color: beige;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 1rem; /* 16 px */
+    background-color: gray;
+    color: whitesmoke;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* display: inline; */
+    display: inline-block;
+    /* display: block; */
+}
+.box3{
+    /* display: none; */
+    /* visibility: hidden; */
+}
+/* Positioning : static, relative, absolute, fixed, sticky */
+.parent{
+    /* position: relative; */
+}
+
+.box3{
+    /* position: relative;
+    top: 0px;
+    left: 0px; */
+}
+.box3{
+    margin: 0px;
+    position: absolute;
+    /* top: 0px; */
+    left: 0px;
+    bottom: 0px;
+}
+/* .header{
+    height: 50px;
+    width: 10%;
+    background-color: beige;
+    position: fixed;
+    bottom: 5%;
+    right: 50%;
+} */
+/* .header{
+    height: 10%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: bisque;
+} */

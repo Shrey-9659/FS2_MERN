@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.parent{
+    height: 90%;
+    width: 90%;
+    background-color: beige;
+    border: 1px solid black;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    /* flex-direction: row, row-reverse, column, column-reverse; */
+    /* justify-content: start, end, center, space-between, space-evenly, space-around; */
+    /* align-items: start, end, center, space-between, space-evenly, space-around; */
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+}
+/* parent -> flexbox */
+/* child -> flex items */
+/* default direction -> row */
+/* direction -> row/row-reverse --> x axis : main axis && y axis : cross axis*/
+/* direction -> column/column-reverse --> x axis : cross axis && y axis : main axis*/
+/* justify-content -> main axis */
+/* align-items -> cross axis */
