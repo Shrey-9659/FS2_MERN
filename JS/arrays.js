@@ -47,3 +47,6 @@
 // Access and modify properties
 // Methods
 // this keyword in object
+
+// Control flow ->
+// switch case
