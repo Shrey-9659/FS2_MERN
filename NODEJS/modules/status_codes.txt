@@ -4,3 +4,10 @@ types of status code :
 3xx : Redirectional code : 301, 307, 308
 4xx : Client Side Error codes : 400, 401, 404
 5xx : Server Side Error codes : 500, 502
+
+Methods : 
+GET : Data travels via URL
+POST : Data travels via body
+PUT : Data travels via body
+PATCH : Data travels via body
+DELETE : Data travels via body
