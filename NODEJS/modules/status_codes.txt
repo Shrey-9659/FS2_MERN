@@ -1,0 +1,6 @@
+types of status code :
+1xx : Informational codes : 100, 101
+2xx : Success code : 200, 201, 204
+3xx : Redirectional code : 301, 307, 308
+4xx : Client Side Error codes : 400, 401, 404
+5xx : Server Side Error codes : 500, 502
