@@ -1,0 +1,103 @@
+Mongodb : NoSQL, document-oriented database.
+- Stores data in JSON like documents. (BSON - Binary JSON)
+- Schema-less
+- Developed by Mongodb INC in 2007
+
+When to use Mongodb : 
+- Real-time analytics.
+- E-com apps
+- Content management
+- Scalability and distributed
+
+Installation: (Make sure to install the MSI packages)
+https://www.mongodb.com/try/download/community
+https://www.mongodb.com/try/download/shell
+https://www.mongodb.com/try/download/database-tools
+
+Database - Container for collections (Marwadi University)
+Collections - Container for documents (Students, Faculties, Other Stuff Members)
+Document - JSON like object ({name : "Vipul", roll no. : 55})
+
+
+Basic Commands
+mongosh - it lets you enter inside the mongo shell
+
+Database :
+1. show dbs || show databases - Shows the list of databases
+2. use <databaseName> - Switch/Create a database
+3. db.dropDatabase() - Delete current database
+
+Collections - 
+1. db.createCollection("collectionName") - To create a new collection
+2. show collections - Shows all the collections in that database
+3. db.collectionName.drop() - To delete a collection
+
+
+CRUD Operation (Create, Read, Update, Delete)
+
+Create Commands -
+1. db.collectionName.insertOne({name : "Rahul"}) - Inserts one documents in a collection
+2. db.collectionName.insertMany([{name : "Rohit"}, {name : "Shrey"}, {name : "Himanshu"}]) - Insert multiple documents in a collection
+
+Read Commands - 
+1. db.collectionName.find() - Shows all the documents present in a collection
+2. db.collectionName.findOne() - Shows only one documents which comes first
+3. db.collectionName.find({key : value}) - Shows the documents which matches the key-value
+4. db.collectionName.find().count() - tell the number of documents
+
+Comparison Operators ->
+1. $eq - Equals to
+- db.collectionName.find({marks : {$eq : 90}})
+
+2. $ne - Not Equals to
+- db.students.find({marks : {$ne : 90}})
+
+3. $gt - Greater Than
+- db.students.find({marks : {$gt : 90}})
+
+4. $gte - Greater Than Equals
+- db.students.find({marks : {$gte : 90}})
+
+5. $lt - Less Than
+- db.students.find({marks : {$lt : 65}})
+
+6. $lte - Less Than Equals
+- db.students.find({marks : {$lte : 65}})
+7. $in - in
+- db.students.find({marks : {$in : [64,90,75]}})
+
+8. $nin - Not in
+- db.students.find({marks : {$nin : [64,90,75]}})
+
+
+Cursor Methods ->
+1. count() - tell the number of documents present
+- db.students.find().count()
+
+2. limit(n) - Will only display n number of documents
+- db.students.find({marks : {$gt : 70}}).limit(5)
+
+3. skip(n) - Will not display the first n number of documents
+- db.students.find({marks : {$gt : 70}}).skip(5)
+
+4. sort({key : 1/-1}) - Sorts the documents in ascending (1) or descending (-1) order
+- db.students.find().sort({marks : 1})
+
+
+Logical Operators ->
+1. AND operator
+- db.students.find({$and : [{marks : {$gt : 60}}, {marks : {$lte : 70}}]})
+
+2. OR operator
+- db.students.find({$or : [{marks : {$lt : 50}}, {marks : {$gt : 90}}]})
+
+3. NOR operator
+- db.students.find({$nor : [{marks : {$lt : 50}}, {marks : {$gt : 90}}]})
+
+4. NOT operator
+- db.students.find({marks : {$not : {$gt : 60}}})
+
+
+Projection ->
+To show/hide some fields of a documents. (1 : include, 0 : exclude)
+IMP : You cannot use 0 and 1 in the same operation
