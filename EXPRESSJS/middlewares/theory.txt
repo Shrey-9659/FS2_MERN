@@ -1,0 +1,40 @@
+Middleware in Express.js is a function that has access to the req, res, next() function in the application's req-res cycle.
+
+It can : 
+Execute a code
+modify req and res objects
+End the req-res cycle
+or call next() to pass control to the next middleware.
+
+Syntax of a middleware : 
+function middlewareName(err, req, res, next){
+    ---login---
+    next();
+}
+
+Types of middlewares : 
+1. Application-level middleware - Applied at the app level using app.use()
+    app.use((err, req, res, next) => {
+        ---login---
+        next()
+    })
+
+2. Router-level middleware - Works exactly like ALM but bount to an express.Router() instance.
+router.use((err, req, res, next) => {
+    ---login---
+    next()
+})
+
+3. Built-in middleware - Express provides some ready-made middleware
+express.static(), express.json(), express.urlencoded()
+
+4. Third-party middleware - Installed via npm
+morgan -> logging
+cors -> cross-origin requests
+helmet -> security headers
+
+5. Error-handling middleware -> Special middleware with 4 arguments
+app.use((err, req, res, next) => {
+    console.log(err.stack);
+    res.status(500).send("Something went wrong)
+})
