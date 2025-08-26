@@ -13,9 +13,10 @@
             <p class="header-subtitle">Organize your tasks efficiently</p>
         </header>
         <main class="main">
+            <!-- Form to add tasks -->
             <section class="add-task-section">
                 <h2 class="section-title">Add New Task</h2>
-                <form id="task-form" class="task-form">
+                <form id="task-form" class="task-form" action="/api/tasks" method="post">
                     <div class="form-group">
                         <label for="title" class="form-label">Task Title *</label>
                         <input type="text" name="title" id="title" class="form-input" required>
@@ -38,7 +39,22 @@
                     <button type="button" id="cancel-edit" class="btn btn-secondary">Cancel Edit</button>
                 </form>
             </section>
+            <!-- Tasks List -->
+             <section class="tasks-section">
+                <div class="tasks-header">
+                    <h2 class="section-title">Your Tasks</h2>
+                    <div class="tasks-stats">
+                        <span id="tasks-count">0 tasks</span>
+                    </div>
+                </div>
+                <div class="loading" id="loading" style="display: none;">Loading tasks...</div>
+                <div class="error-message" id="error-message" style="display: none;"></div>
+                <div class="tasks-container" id="tasks-container">
+                    <!-- Tasks will be dynamically inserted here -->
+                </div>
+             </section>
         </main>
     </div>
+    <div id="toast" class="toast"></div>
 </body>
 </html>

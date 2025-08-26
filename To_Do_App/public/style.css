@@ -43,7 +43,8 @@ body{
     align-items: start;
 }
 
-.add-task-section{
+.add-task-section,
+.tasks-section{
     background: white;
     padding: 30px;
     border-radius: 12px;
@@ -123,4 +124,18 @@ body{
 }
 .btn-secondary:hover{
     background: #4b5563;
+}
+
+.tasks-header{
+    font-size: 14px;
+    color: #6b7280;
+    background: #f3f4f6;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.tasks-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
