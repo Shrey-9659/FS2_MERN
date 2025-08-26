@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-title">Task Manager</h1>
+            <p class="header-subtitle">Organize your tasks efficiently</p>
+        </header>
+        <main class="main">
+            <section class="add-task-section">
+                <h2 class="section-title">Add New Task</h2>
+                <form id="task-form" class="task-form">
+                    <div class="form-group">
+                        <label for="title" class="form-label">Task Title *</label>
+                        <input type="text" name="title" id="title" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea name="description" id="description" class="form-textarea" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="priority" class="form-label">Priority</label>
+                        <select name="priority" id="priority" class="form-select">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                    <button type="button" id="cancel-edit" class="btn btn-secondary">Cancel Edit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
