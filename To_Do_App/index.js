@@ -69,7 +69,7 @@ app.get("/api/tasks/:id", async(req, res) => {
 })
 
 app.post("/api/tasks", async(req, res) => {
-    console.log(req.body)
+    
     try {
         
         const task = new Task(req.body)

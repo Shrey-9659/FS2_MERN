@@ -1,0 +1,63 @@
+Back in 2000s most websites used jQuery for DOM manipulation.
+Ands as the app grew bigger, manully updating the DOM bacame messy.
+Codebases got harder to maintain. (a problem called as "spaghetti code")
+
+Creation of React - year 2011.
+Facebook software engineer "Jorjan walke" created a prototype called FaxJS.
+- It introducted the itea of Vitual DOM :
+-- Instead of directly updating the browser DOM, react would first update a virtual code and then apply only the necessary changes.
+-- This made UI updated faster and more predictable.
+
+Facebook first used it in Facebook news feed and later in Instagram (in 2012.)
+
+Public Release - 2013 (May)
+
+Code to create react template : 
+npm create vite@latest projectName
+
+What is JSX?
+- JSX stands for JavaScript XML.
+- It allows you to write HTML inside of JavaScript.
+Example : 
+const element = <h1>Hello World!</h1>
+- Browser doesn't understand JSX directly.
+- React uses Babel to convert JSX into React.createElement() calls.
+- JSX makes code readable and declarative.
+
+What is Components?
+Components are the building blocks of a React app.
+A component is like a function that returns UI.
+IMPORTANT NOTE : Component name should ALWAYS start with capital letter.
+IMPORTANT NOTE : You can only return single element from one component
+Types of Components : 
+1. Functional Components - modern and recommended
+2. Class Components - older, rarely used now
+
+Example : 
+function ExampleComponent(){
+    return(
+        <div>
+            Hello World
+        </div>
+    )
+}
+
+What are hooks? (useHookName - useState, useEffect, useMemo, useContext)
+- Hooks are special functions in React that lets you hook into React featured
+- Introduced in React 16.8 (2019).
+- They allows you to use state and other React features in functional components (without classes)
+
+Before hooks: state & lifcycle -> only in class component
+After hooks: functional components can do everything.
+
+Why hooks?
+Simpler code, resuable logic, Cleaner separation of concerns (UI vs logic)
+
+Commonly used Hooks : 
+1. useState : Manange state inside of component
+2. useEffect : Side effects (API calls, timers, DOM updates)
+3. useContext : Access global data without prop drilling
+4. useReducer : Complex state management
+5. useRef : Directly access/manipulate DOM or persist values
+6. useMemo : Optimize expensive calculations
+7. useCallback : Optimize function references

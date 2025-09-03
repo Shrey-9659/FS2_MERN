@@ -128,7 +128,6 @@ function renderTasks() {
         tasksContainer.innerHTML = `<div class="empty-state"><h3>No tasks yet</h3><p>Add your first task to get started!</p></div>`;
         return;
     }
-
     tasksContainer.innerHTML = tasks.map(task => createTaskCard(task)).join('');
 }
 
