@@ -1,0 +1,12 @@
+.Header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
